@@ -44,7 +44,7 @@ function moveDodgerUp(){
     const upNumber = dodger.style.bottom.replace("px","");
     const up = parseInt(upNumber,10);
 
-    if(up>0){
+    if(up>=0){
         dodger.style.bottom = `${up+1}px`;
     }
 }
