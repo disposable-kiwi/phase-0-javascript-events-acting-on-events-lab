@@ -35,7 +35,7 @@ function moveDodgerRight(){
     const leftNumber = dodger.style.left.replace("px","");
     const left = parseInt(leftNumber,10);
 
-    if(left>0){
+    if(left<360){
         dodger.style.left = `${left+1}px`;
     }
 }
@@ -44,7 +44,7 @@ function moveDodgerUp(){
     const upNumber = dodger.style.bottom.replace("px","");
     const up = parseInt(upNumber,10);
 
-    if(up>=0){
+    if(up>=0&&up<380){
         dodger.style.bottom = `${up+1}px`;
     }
 }
